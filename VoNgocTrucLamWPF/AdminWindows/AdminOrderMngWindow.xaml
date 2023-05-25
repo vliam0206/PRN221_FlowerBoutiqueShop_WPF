@@ -107,7 +107,7 @@
                 <Button x:Name="btnDetail" Content="View Detail"
                     Grid.Column="0" Margin="10" Click="btnDetail_Click"/>
                 <Button Grid.Column="1" Margin="10" Content="Make Order"/>
-                <Button Grid.Column="2" Margin="10" Content="Update"/>
+                <Button x:Name="btnUpdate" Grid.Column="2" Margin="10" Content="Update" Click="btnUpdate_Click"/>
                 <Button x:Name="btnDelete" Grid.Column="3" Margin="10" Content="Delete" Click="btnDelete_Click"/>
                 <Button Grid.Column="4" Margin="10" Content="View Detail"/>
                 <Button Grid.Column="5" Margin="10" Content="Load" Click="Button_Click"/>

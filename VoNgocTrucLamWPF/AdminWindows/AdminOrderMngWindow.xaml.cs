@@ -2,6 +2,7 @@
 using Repositories.UnitOfWork;
 using System;
 using System.Windows;
+using VoNgocTrucLamWPF.AdminWindows;
 
 namespace VoNgocTrucLamWPF
 {
@@ -120,6 +121,28 @@ namespace VoNgocTrucLamWPF
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Detail Order");
+            }
+        }
+
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Order ordObj = GetOrderObj();
+                OrderUpdateWindow detailWindow = new OrderUpdateWindow(unitOfWork)
+                {
+                    OrderObject = ordObj
+                };
+                detailWindow.ShowInTaskbar = false;
+                detailWindow.Owner = this;
+                if (detailWindow.ShowDialog().Value)
+                {
+                    LoadOrderList();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Update Order failed");
             }
         }
     }
