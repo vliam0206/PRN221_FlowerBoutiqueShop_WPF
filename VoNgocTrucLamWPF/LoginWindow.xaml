@@ -1,0 +1,44 @@
+﻿<Window x:Class="VoNgocTrucLamWPF.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VoNgocTrucLamWPF"
+        mc:Ignorable="d"
+        Title="FUFlowerSystem - Login" Height="350" Width="500"
+        WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Background="White">
+            <Rectangle>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/Images/flowershop_background.jpg"/>
+                </Rectangle.Fill>
+            </Rectangle>
+        </Border>
+        <Border Grid.Column="1" Background="#FFF1F4F6">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Content="FU Flower System" Foreground="#FFF69191" 
+                       FontWeight="Bold" FontFamily="Segoe UI Black" 
+                       FontSize="25" HorizontalAlignment="Center" 
+                       VerticalAlignment="Center"/>
+                <StackPanel Grid.Row="1">
+                    <Label Content="User name" Margin="30 0 0 0"/>
+                    <TextBox x:Name="txtUsername" Margin="30 0 35 0" Height="25"/>
+                    <Label Content="Password" Margin="30 15 0 0"/>
+                    <PasswordBox x:Name="txtPassword" Margin="30 0 35 0" Height="25"/>
+                    <Button x:Name="btnLogin" Content="Login" Margin="30 25 35 0" 
+                            Background="#FFF69191" Foreground="#FFF1F4F6"
+                            Height="25" Click="btnLogin_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

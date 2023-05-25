@@ -1,0 +1,86 @@
+﻿<Window x:Class="VoNgocTrucLamWPF.FlowerDetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VoNgocTrucLamWPF"
+        mc:Ignorable="d"
+        Title="FlowerDetailWindow" Height="500" Width="400"
+        WindowStartupLocation="CenterOwner" Loaded="Window_Loaded">
+    <Grid Background="#FFF1F4F6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <!--Title-->
+        <TextBlock Grid.Row="0" Text="Flower Bouquet Detail" Foreground="#FFF69191"
+                   FontWeight="Bold" FontFamily="Segoe UI Black" 
+                   FontSize="25" HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" Margin="0 20 0 0"/>
+        <!-- Input fields-->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Flower ID" Margin="20 5 0 0"
+                   Grid.Column="0" Grid.Row="0"/>
+            <TextBox x:Name="txtFlowerId" Margin="10 10 80 10"
+                     Grid.Column="1" Grid.Row="0"
+                     Text="{Binding Path=FlowerBouquetId, Mode=OneWay}"
+                     DataContext="{Binding ElementName=FlowerListView,
+                        Path=SelectedItem}"/>
+            <Label Content="Flower Name" Margin="20 5 0 0"
+                   Grid.Column="0" Grid.Row="1"/>
+            <TextBox x:Name="txtFlowerName" Margin="10 10 80 10"
+                     Grid.Column="1" Grid.Row="1"/>
+            <Label Content="Category" Margin="20 5 0 0"
+                   Grid.Column="0" Grid.Row="2"/>
+            <ComboBox x:Name="cboCategory" Margin="10 10 80 10"
+                     Grid.Column="1" Grid.Row="2"/>
+            <Label Content="Description" Margin="20 5 0 0"
+                   Grid.Column="0" Grid.Row="3"/>
+            <TextBox x:Name="txtDescription" Margin="10 10 80 10"
+                     Grid.Column="1" Grid.Row="3"/>
+            <Label Content="Unit Price" Margin="20 5 0 0"
+                   Grid.Column="0" Grid.Row="4"/>
+            <TextBox x:Name="txtUnitPrice" Margin="10 10 80 10"
+                     Grid.Column="1" Grid.Row="4"/>
+            <Label Content="Units In tock" Margin="20 5 0 0"
+                   Grid.Column="0" Grid.Row="5"/>
+            <TextBox x:Name="txtUnitInStock" Margin="10 10 80 10"
+                     Grid.Column="1" Grid.Row="5"/>
+            <Label Content="Status" Margin="20 5 0 0"
+                   Grid.Column="0" Grid.Row="6"/>
+            <ComboBox x:Name="cboStatus" Margin="10 10 80 10"
+                     Grid.Column="1" Grid.Row="6"/>
+            <Label Content="Supplier" Margin="20 5 0 0"
+                   Grid.Column="0" Grid.Row="7"/>
+            <ComboBox x:Name="cboSupplier" Margin="10 10 80 10"
+                     Grid.Column="1" Grid.Row="7"/>
+        </Grid>
+        <!-- Buttons -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnSave" Content="Save" Grid.Column="0"
+                    Width="80" Height="30" Margin="30 0 0 10" Click="btnSave_Click"/>
+            <Button x:Name="btnClose" Content="Close" Grid.Column="1"
+                    Width="80" Height="30" Margin="0 0 30 10" Click="btnClose_Click"/>
+        </Grid>
+    </Grid>
+</Window>

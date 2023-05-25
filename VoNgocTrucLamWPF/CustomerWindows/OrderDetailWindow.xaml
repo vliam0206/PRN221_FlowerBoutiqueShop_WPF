@@ -1,0 +1,39 @@
+﻿<Window x:Class="VoNgocTrucLamWPF.OrderDetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VoNgocTrucLamWPF"
+        mc:Ignorable="d"
+        Title="FUFlowerSystem - Order Detail" Height="450" Width="600"
+        WindowStartupLocation="CenterOwner" Loaded="Window_Loaded">
+    <StackPanel Background="#FFF1F4F6">
+        <!-- Title -->
+        <TextBlock Text="Order Detail" Foreground="#FFF69191"
+                   FontWeight="Bold" FontFamily="Segoe UI Black" 
+                   FontSize="25" HorizontalAlignment="Left"
+                   VerticalAlignment="Center" Margin="20 20 0 20"/>
+        <!-- Data view -->
+        <ListView x:Name="lvOrderDetail" Height="auto" Margin="20 0 20 0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Order Id" Width="100"
+                                        DisplayMemberBinding="{Binding Path=OrderId}"/>
+                    <GridViewColumn Header="Flower Id" Width="100"
+                                        DisplayMemberBinding="{Binding Path=FlowerBouquetId}"/>
+                    <GridViewColumn Header="Unit Price" Width="100"
+                                        DisplayMemberBinding="{Binding Path=UnitPrice, 
+                                            StringFormat={}{0:N3}}"/>
+                    <GridViewColumn Header="Quantity" Width="100"
+                                        DisplayMemberBinding="{Binding Path=Quantity}"/>
+                    <GridViewColumn Header="Discount" Width="100"
+                                        DisplayMemberBinding="{Binding Path=Discount}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <!-- Button -->
+        <Button x:Name="btnClose" Height="30" Width="80"
+                Content="Close" HorizontalAlignment="Right"
+                Margin="0 15 20 0" Click="btnClose_Click"/>
+    </StackPanel>
+</Window>
