@@ -64,7 +64,7 @@
 - [x] Confirmation dialog for deletion actions
 
 ## References
-- [C# WPF UI | How to Design Flat Data Table Dashboard in WPF - Youtube](#https://www.youtube.com/watch?v=mlmyFXJy8gQ)
+- [C# WPF UI | How to Design Flat Data Table Dashboard in WPF - Youtube](https://www.youtube.com/watch?v=mlmyFXJy8gQ)
 
 ## License & Copyright 
 &copy; 2024 LamVo
