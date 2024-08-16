@@ -19,13 +19,13 @@
 <div align="center">
  <img src="./Screenshots/1-login.png" alt="Login" width="75%"></img>
  </br></br>
- <img src="./screenshots/2-flowerMng.png" alt="Flower Management" width="45%"></img> &nbsp;&nbsp; 
- <img src="./screenshots/3-search.png" alt="Flower Management" width="45%"></img>
+ <img src="./Screenshots/2-flowerMng.png" alt="Flower Management" width="45%"></img> &nbsp;&nbsp; 
+ <img src="./Screenshots/3-search.png" alt="Search" width="45%"></img>
   </br></br>
- <img src="./screenshots/4-addFlower.png" alt="Flower Management" width="45%"></img> &nbsp;&nbsp; 
- <img src="./screenshots/5-updateFlower.png" alt="Flower Management" width="45%"></img>
+ <img src="./Screenshots/4-addFlower.png" alt="Add Flower" width="45%"></img> &nbsp;&nbsp; 
+ <img src="./Screenshots/5-updateFlower.png" alt="Update Flower" width="45%"></img>
  </br></br>
- <img src="./screenshots/6-orderMng.png" alt="Flower Management" width="45%"></img>
+ <img src="./Screenshots/6-orderMng.png" alt="Order Management" width="45%"></img>
 </div>
 
 ## Technology
