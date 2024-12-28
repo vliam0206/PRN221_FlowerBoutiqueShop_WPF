@@ -29,24 +29,15 @@
 </div>
 
 ## Technology
-**1. Frontend**
-  - Windows Presentation Foundation (WPF)
+**1. Frontend:** Windows Presentation Foundation (WPF)
 
-**2. Backend**
-  - ASP.NET 7
+**2. Backend:** ASP.NET 7
 
-**3. Database**
-  - MSSQL Server 19
+**3. Database:** MSSQL Server 19
 
-**4. Other Technologies**
-- Entity Framework Core
-- LINQ for data querying
-- 3-Layers architecture
-- MVVM (Model-View ViewModel) pattern
-- Repository pattern and Singleton pattern
+**4. Concepts and Patterns:** Entity Framework Core, LINQ, 3-Layers architecture, MVVM (Model-View ViewModel) pattern, Repository pattern, Singleton pattern.
 
-**5. Tool**
-  - Visual Studio
+**5. Tool:** MS Visual Studio
 
 ## Functional requirements
 **1. Admin:**
@@ -68,3 +59,5 @@
 
 ## License & Copyright 
 &copy; 2024 LamVo
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
